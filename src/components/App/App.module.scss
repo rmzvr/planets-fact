@@ -1,0 +1,86 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-rows: 326px 176px calc(128px + 48px);
+
+  row-gap: 39px;
+
+  margin-top: 4vh;
+  margin-bottom: 56px;
+}
+
+.image {
+  justify-self: center;
+  align-self: center;
+  grid-row: 1 / 3;
+}
+
+.stats {
+  grid-column: 1 / -1;
+}
+
+.title {
+  margin-bottom: 23px;
+
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+}
+
+.content {
+  margin-bottom: 23px;
+
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: var(--clr-white);
+}
+
+.source {
+  font-family: "Spartan";
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 25px;
+
+  opacity: 0.5;
+
+  color: var(--clr-white);
+
+  .sourceLabel {
+    font-weight: 400;
+  }
+
+  .sourceLink {
+    font-weight: 700;
+
+    text-decoration-line: underline;
+  }
+
+  .sourceImage {
+    margin-left: 8px;
+    margin-bottom: -3px;
+  }
+}
+
+.tabs {
+  display: grid;
+  row-gap: 16px;
+  grid-column: 2 / -1;
+}
+
+.stats {
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: space-between;
+}

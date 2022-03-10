@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 253px;
+  min-height: 126px;
+
+  padding-top: 20px;
+  padding-bottom: 27px;
+  padding-inline: 23px;
+
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.category {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+
+  opacity: 0.5;
+}
+
+.content {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+}
