@@ -12,13 +12,20 @@
 
   transition: 0.1s ease-in;
 
-  &:hover {
+  cursor: pointer;
+
+  &[class~="active"] {
     background-color: var(--clr-sky-blue);
     border-color: var(--clr-sky-blue);
   }
+
+  &:hover {
+    background-color: hsla(0, 0%, 85%, 0.2);
+    border-color: hsla(0, 0%, 85%, 0.2);
+  }
 }
 
-.tabCount {
+.tabID {
   margin-right: 28px;
 
   font-family: "Spartan";
