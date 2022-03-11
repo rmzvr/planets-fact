@@ -1,31 +1,59 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import Tab from "../UI/Tab/Tab";
 import Card from "../UI/Card/Card";
 import styles from "./App.module.scss";
-import img from "../../assets/planet-mercury.svg";
 import planets from "../../data.json";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("overview");
+  const [image, setImage] = useState(null);
+
+  const tabs = [
+    {
+      id: "01",
+      category: "overview",
+      content: "Overview",
+    },
+    {
+      id: "02",
+      category: "structure",
+      content: "Internal Structure",
+    },
+    {
+      id: "03",
+      category: "geology",
+      content: "Surface Geology",
+    },
+  ];
+
+  useEffect(() => {
+    getImage();
+  }, [activeTab]);
+
+  function getImage() {
+    const imageName = planets[0].images[activeTab].match("(?<=s/).*");
+
+    import(`../../assets/${imageName}`).then((image) =>
+      setImage(image.default)
+    );
+  }
+
   return (
     <div className="App">
       <Header></Header>
       <div className="container">
         <main className={styles.main}>
-          <img
-            className={styles.image}
-            src={img}
-            alt="marcury"
-            width="290"
-            height="290"
-          />
+          <img className={styles.image} src={image} alt="marcury" />
           <div className={styles.about}>
             <h1 className={styles.title}>{planets[0].name}</h1>
-            <p className={styles.content}>{planets[0].overview.content}</p>
+            <p className={styles.content}>{planets[0][activeTab].content}</p>
             <p className={styles.source}>
               <span className={styles.sourceLabel}>Source : </span>
               <a
                 className={styles.sourceLink}
-                href={planets[0].overview.source}
+                href={planets[0][activeTab].source}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -46,9 +74,17 @@ function App() {
             </p>
           </div>
           <ul className={styles.tabs}>
-            <Tab count="01">Overview</Tab>
-            <Tab count="02">Internal Structure</Tab>
-            <Tab count="03">Surface Geology</Tab>
+            {tabs.map((tab) => (
+              <Tab
+                classes={activeTab === tab.category ? "active" : " "}
+                id={tab.id}
+                data-category={tab.category}
+                key={tab.category}
+                handleClick={() => setActiveTab(tab.category)}
+              >
+                {tab.content}
+              </Tab>
+            ))}
           </ul>
           <ul className={styles.stats}>
             <Card category="ROTATION TIME">{planets[0].rotation}</Card>
