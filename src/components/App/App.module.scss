@@ -1,7 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 350px;
-  grid-template-rows: 326px 176px calc(128px + 48px);
+  grid-template-rows: 1fr 176px calc(128px + 48px);
 
   row-gap: 39px;
 
@@ -9,9 +9,15 @@
   margin-bottom: 56px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .image {
   justify-self: center;
-  margin-top: 130px;
+  align-self: center;
   grid-row: 1 / 3;
 }
 
