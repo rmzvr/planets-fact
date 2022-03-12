@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState } from "react";
 import styles from "../components/App/App.module.scss";
-import planets from "../data.json";
+import planets from "../planets.json";
 import useImage from "../utils/useImage";
 import getPlanet from "../utils/getPlanet";
 import Source from "../components/UI/Source/Source";
