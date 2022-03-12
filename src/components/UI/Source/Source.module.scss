@@ -1,0 +1,26 @@
+.source {
+  font-family: "Spartan";
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 25px;
+
+  opacity: 0.5;
+
+  color: var(--clr-white);
+}
+
+.sourceLabel {
+  font-weight: 400;
+}
+
+.sourceLink {
+  font-weight: 700;
+
+  text-decoration-line: underline;
+}
+
+.sourceImage {
+  margin-left: 8px;
+  margin-bottom: -3px;
+}

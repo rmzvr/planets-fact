@@ -1,3 +1,9 @@
+.tabs {
+  display: grid;
+  row-gap: 16px;
+  grid-column: 2 / -1;
+}
+
 .tab {
   display: flex;
 
