@@ -11,6 +11,8 @@
 }
 
 .navigation {
+  --clr-main: var(--clr-mercury);
+
   ul {
     display: flex;
     gap: 33px;
@@ -43,7 +45,7 @@
         left: 0;
         right: 0;
         height: 4px;
-        background-color: var(--clr-sky-blue);
+        background-color: var(--clr-main);
         transition: 0.2s ease-in;
         opacity: 0;
       }

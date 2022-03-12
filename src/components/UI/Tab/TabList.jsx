@@ -3,6 +3,8 @@ import Tab from "./Tab";
 import styles from "./Tab.module.scss";
 
 function TabList({ activeTab, setActiveTab }) {
+  let planetName = window.location.pathname.substring(1);
+
   const tabs = [
     {
       id: "01",
@@ -22,7 +24,7 @@ function TabList({ activeTab, setActiveTab }) {
   ];
 
   return (
-    <ul className={styles.tabs}>
+    <ul className={`${styles.tabs} ${planetName}`}>
       {tabs.map((tab) => (
         <Tab
           classes={activeTab === tab.category ? "active" : " "}
