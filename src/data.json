@@ -140,7 +140,7 @@
     "images": {
       "overview": "./assets/planet-saturn.svg",
       "structure": "./assets/planet-saturn-internal.svg",
-      "geology": "./assets/geology-saturn.png"
+      "geology": "./assets/geology-saturn.svg"
     }
   },
   {
