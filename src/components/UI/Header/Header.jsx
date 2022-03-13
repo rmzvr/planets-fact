@@ -11,10 +11,17 @@ function Header() {
         The planets
       </Link>
       <nav className={styles.navigation}>
-        <ul>
+        <ul className={styles.items}>
           {planets.map((planet) => (
-            <li key={planet.name.toLowerCase()}>
-              <Link to={`/${planet.name.toLowerCase()}`}>
+            <li
+              className={styles.item}
+              key={planet.name.toLowerCase()}
+              data-planet={planet.name.toLocaleLowerCase()}
+            >
+              <Link
+                className={styles.link}
+                to={`/${planet.name.toLowerCase()}`}
+              >
                 {planet.name.toLowerCase()}
               </Link>
             </li>

@@ -10,60 +10,104 @@
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
-.navigation {
-  --clr-main: var(--clr-mercury);
+.items {
+  display: flex;
+  gap: 33px;
+}
 
-  ul {
-    display: flex;
-    gap: 33px;
+.item {
+  position: relative;
 
-    li {
-      position: relative;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
 
-      font-family: "Spartan";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 11px;
-      line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-      letter-spacing: 1px;
-      text-transform: uppercase;
+  transition: 0.2s ease-in;
 
-      transition: 0.2s ease-in;
+  color: var(--clr-white);
 
-      color: var(--clr-white);
+  opacity: 0.7;
 
-      opacity: 0.7;
+  cursor: pointer;
 
-      cursor: pointer;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--clr-main);
+    transition: 0.2s ease-in;
+    opacity: 0;
+  }
 
-      &::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background-color: var(--clr-main);
-        transition: 0.2s ease-in;
-        opacity: 0;
-      }
+  &:hover {
+    opacity: 1;
 
-      &:hover {
-        opacity: 1;
-
-        &::before {
-          opacity: 1;
-        }
-      }
-    }
-
-    a {
-      display: block;
-      line-height: 85px;
+    &::before {
+      opacity: 1;
     }
   }
+
+  &[data-planet~="mercury"] {
+    &::before {
+      background-color: var(--clr-mercury);
+    }
+  }
+
+  &[data-planet~="venus"] {
+    &::before {
+      background-color: var(--clr-venus);
+    }
+  }
+
+  &[data-planet~="earth"] {
+    &::before {
+      background-color: var(--clr-earth);
+    }
+  }
+
+  &[data-planet~="mars"] {
+    &::before {
+      background-color: var(--clr-mars);
+    }
+  }
+
+  &[data-planet~="jupiter"] {
+    &::before {
+      background-color: var(--clr-jupiter);
+    }
+  }
+
+  &[data-planet~="saturn"] {
+    &::before {
+      background-color: var(--clr-saturn);
+    }
+  }
+
+  &[data-planet~="uranus"] {
+    &::before {
+      background-color: var(--clr-uranus);
+    }
+  }
+
+  &[data-planet~="neptune"] {
+    &::before {
+      background-color: var(--clr-neptune);
+    }
+  }
+}
+
+.link {
+  display: block;
+  line-height: 85px;
 }
 
 .logo {

@@ -15,7 +15,7 @@ function Mercury() {
 
   return (
     <div className="container">
-      <main className={styles.main}>
+      <main className={`${styles.main} ${planet.name.toLowerCase()}`}>
         <img className={styles.image} src={image} alt={planet.name} />
         <div className={styles.about}>
           <h1 className={styles.title}>{planet.name}</h1>
