@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[855],{855:function(e,a,t){e.exports=t.p+"static/media/geology-jupiter.35bdf7ca4da1225ef1a0.png"}}]);

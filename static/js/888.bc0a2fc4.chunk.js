@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[888],{888:function(a,s,t){a.exports=t.p+"static/media/planet-mars.f9dc1ca45a888b568829.svg"}}]);

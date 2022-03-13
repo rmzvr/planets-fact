@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[26],{26:function(e,a,t){e.exports=t.p+"static/media/geology-neptune.5ca744e154ead41a39dd.png"}}]);

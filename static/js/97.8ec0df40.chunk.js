@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[97],{97:function(e,t,a){e.exports=a.p+"static/media/planet-earth-internal.3c465186cd11e2861505.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[287],{287:function(a,t,e){a.exports=e.p+"static/media/planet-mars-internal.d867ac804b24a57bcc34.svg"}}]);

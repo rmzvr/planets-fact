@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[382],{382:function(e,s,t){e.exports=t.p+"static/media/planet-venus.db5a344418797845ce8f.svg"}}]);

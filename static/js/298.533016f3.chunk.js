@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[298],{298:function(e,a,t){e.exports=t.p+"static/media/planet-venus-internal.1a94aa02c54e1742e5c5.svg"}}]);

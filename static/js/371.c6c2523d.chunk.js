@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[371],{371:function(e,s,t){e.exports=t.p+"static/media/geology-venus.45799d92c718c19e51bf.png"}}]);

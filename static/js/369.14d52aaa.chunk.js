@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[369],{369:function(e,t,a){e.exports=a.p+"static/media/planet-uranus-internal.578233c62999b0e1bec2.svg"}}]);

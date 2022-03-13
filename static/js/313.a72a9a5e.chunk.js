@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[313],{313:function(e,t,a){e.exports=a.p+"static/media/geology-mercury.5571ba83d8c0d8debbb5.png"}}]);

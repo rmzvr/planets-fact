@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[578],{578:function(t,e,a){t.exports=a.p+"static/media/planet-jupiter.b1d0956b70a8ccb39f17.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[389],{389:function(t,a,s){t.exports=s.p+"static/media/planet-saturn.540508930b0081782a22.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[150],{150:function(e,t,n){e.exports=n.p+"static/media/planet-neptune-internal.3ebd623e9cc13840612d.svg"}}]);

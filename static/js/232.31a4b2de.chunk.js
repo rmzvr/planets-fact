@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[232],{232:function(a,e,t){a.exports=t.p+"static/media/planet-neptune.af32296149ca9824ac1a.svg"}}]);

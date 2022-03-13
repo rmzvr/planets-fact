@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[154],{154:function(e,t,a){e.exports=a.p+"static/media/geology-earth.fb2d429d390985b6d434.png"}}]);

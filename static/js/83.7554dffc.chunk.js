@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[83],{83:function(a,e,s){a.exports=s.p+"static/media/geology-saturn.66f390a8e93addaa924d.svg"}}]);

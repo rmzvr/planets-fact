@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[746],{746:function(a,t,e){a.exports=e.p+"static/media/planet-saturn-internal.c614a403f37da5d7107a.svg"}}]);

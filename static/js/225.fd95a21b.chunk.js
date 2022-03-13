@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[225],{225:function(e,t,c){e.exports=c.p+"static/media/planet-mercury.1fce205c50f4657418d4.svg"}}]);

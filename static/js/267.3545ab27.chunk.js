@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[267],{267:function(a,s,t){a.exports=t.p+"static/media/background-stars.f6233a6a8d2351c57f2b.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[508],{508:function(t,a,e){t.exports=e.p+"static/media/planet-earth.4d12af96d901006c0b94.svg"}}]);
