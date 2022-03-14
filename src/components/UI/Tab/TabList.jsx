@@ -3,7 +3,7 @@ import Tab from "./Tab";
 import styles from "./Tab.module.scss";
 
 function TabList({ activeTab, setActiveTab }) {
-  let planetName = window.location.pathname.substring(1);
+  let planetName = window.location.hash.substring(2);
 
   const tabs = [
     {

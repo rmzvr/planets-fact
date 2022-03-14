@@ -14,15 +14,15 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="*" element={<Navigate to="/mercury" />} />
-      <Route path="/" element={<Navigate to="mercury" />} />
-      <Route path="mercury" element={<Mercury />} />
-      <Route path="venus" element={<Venus />} />
-      <Route path="earth" element={<Earth />} />
-      <Route path="mars" element={<Mars />} />
-      <Route path="jupiter" element={<Jupiter />} />
-      <Route path="saturn" element={<Saturn />} />
-      <Route path="uranus" element={<Uranus />} />
-      <Route path="neptune" element={<Neptune />} />
+      <Route path="/" element={<Navigate to="/mercury" />} />
+      <Route path="/mercury" element={<Mercury />} />
+      <Route path="/venus" element={<Venus />} />
+      <Route path="/earth" element={<Earth />} />
+      <Route path="/mars" element={<Mars />} />
+      <Route path="/jupiter" element={<Jupiter />} />
+      <Route path="/saturn" element={<Saturn />} />
+      <Route path="/uranus" element={<Uranus />} />
+      <Route path="/neptune" element={<Neptune />} />
     </Routes>
   );
 }
