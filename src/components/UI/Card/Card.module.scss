@@ -4,6 +4,19 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1280px) {
+    grid-column: 2 / -1;
+  }
+
+  @media screen and (max-width: 740px) {
+    flex-direction: column;
+
+    grid-column: unset;
+    grid-row: 4 / -1;
+
+    row-gap: 8px;
+  }
 }
 
 .card {
@@ -27,6 +40,17 @@
     padding-top: 15px;
     padding-bottom: 18px;
     padding-inline: 15px;
+  }
+
+  @media screen and (max-width: 740px) {
+    max-width: unset;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 11px;
+    padding-inline: 24px;
   }
 }
 
@@ -52,6 +76,13 @@
 
     letter-spacing: 0.727273px;
   }
+
+  @media screen and (max-width: 740px) {
+    margin-bottom: 0;
+
+    font-size: 8px;
+    line-height: 16px;
+  }
 }
 
 .content {
@@ -71,5 +102,12 @@
     line-height: 31px;
 
     letter-spacing: -0.9px;
+  }
+
+  @media screen and (max-width: 740px) {
+    font-size: 20px;
+    line-height: 26px;
+
+    letter-spacing: -0.75px;
   }
 }

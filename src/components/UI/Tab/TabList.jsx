@@ -1,6 +1,7 @@
 import React from "react";
 import Tab from "./Tab";
 import styles from "./Tab.module.scss";
+import MediaQuery from "react-responsive";
 
 function TabList({ activeTab, setActiveTab }) {
   let planetName = window.location.hash.substring(2);
@@ -9,34 +10,62 @@ function TabList({ activeTab, setActiveTab }) {
     {
       id: "01",
       category: "overview",
-      content: "Overview",
+      content: {
+        desktop: "Overview",
+        mobile: "Overview",
+      },
     },
     {
       id: "02",
       category: "structure",
-      content: "Internal Structure",
+      content: {
+        desktop: "Internal Structure",
+        mobile: "Structure",
+      },
     },
     {
       id: "03",
       category: "geology",
-      content: "Surface Geology",
+      content: {
+        desktop: "Surface Geology",
+        mobile: "Surface",
+      },
     },
   ];
 
   return (
-    <ul className={`${styles.tabs} ${planetName}`}>
-      {tabs.map((tab) => (
-        <Tab
-          classes={activeTab === tab.category ? "active" : " "}
-          id={tab.id}
-          data-category={tab.category}
-          key={tab.category}
-          handleClick={() => setActiveTab(tab.category)}
-        >
-          {tab.content}
-        </Tab>
-      ))}
-    </ul>
+    <>
+      <MediaQuery minWidth={741}>
+        <ul className={`${styles.tabsDesktop} ${planetName}`}>
+          {tabs.map((tab) => (
+            <Tab
+              classes={activeTab === tab.category ? "active" : " "}
+              id={tab.id}
+              data-category={tab.category}
+              key={tab.category}
+              handleClick={() => setActiveTab(tab.category)}
+            >
+              {tab.content.desktop}
+            </Tab>
+          ))}
+        </ul>
+      </MediaQuery>
+      <MediaQuery maxWidth={740}>
+        <ul className={`${styles.tabsMobile} ${planetName}`}>
+          {tabs.map((tab) => (
+            <Tab
+              classes={activeTab === tab.category ? "active" : " "}
+              id={tab.id}
+              data-category={tab.category}
+              key={tab.category}
+              handleClick={() => setActiveTab(tab.category)}
+            >
+              {tab.content.mobile}
+            </Tab>
+          ))}
+        </ul>
+      </MediaQuery>
+    </>
   );
 }
 

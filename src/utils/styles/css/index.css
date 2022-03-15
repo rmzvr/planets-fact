@@ -435,6 +435,11 @@ a {
     width: min(100% - 2rem, 43rem);
   }
 }
+@media screen and (max-width: 740px) {
+  .container {
+    width: min(100% - 3rem, 43rem);
+  }
+}
 
 body {
   background-image: url(../../../assets/background-stars.svg);

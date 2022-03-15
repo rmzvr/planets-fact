@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   height: 85px;
 
   display: flex;
@@ -14,9 +16,20 @@
 
     flex-direction: column;
 
+    row-gap: 39px;
+
     padding-top: 32px;
     padding-bottom: 27px;
     padding-inline: 51.5px;
+  }
+
+  @media screen and (max-width: 740px) {
+    flex-direction: row;
+
+    padding-block: 16px;
+    padding-inline: 24px;
+
+    row-gap: unset;
   }
 }
 
@@ -31,8 +44,7 @@
 
   color: var(--clr-white);
 
-  @media screen and (max-width: 1280px) {
-    margin-bottom: 39px;
+  @media screen and (max-width: 740px) {
   }
 }
 
@@ -44,7 +56,7 @@
 .item {
   position: relative;
 
-  font-family: "Spartan";
+  font-family: "Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 11px;
@@ -143,4 +155,8 @@
   @media screen and (max-width: 1280px) {
     line-height: 25px;
   }
+}
+
+.hamburgerMenuIcon {
+  cursor: pointer;
 }

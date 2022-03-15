@@ -1,10 +1,14 @@
-.tabs {
+.tabsDesktop {
   display: grid;
   row-gap: 16px;
   grid-column: 2 / -1;
 
   @media screen and (max-width: 1280px) {
     align-content: center;
+  }
+
+  @media screen and (max-width: 740px) {
+    grid-row: 1 / 2;
   }
 
   &[class~="mercury"] {
@@ -40,7 +44,7 @@
   }
 }
 
-.tab {
+.tabDesktop {
   display: flex;
 
   padding-block: 11.5px;
@@ -94,4 +98,123 @@
   margin-right: 28px;
 
   opacity: 0.5;
+}
+
+.tabsMobile {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    display: block;
+    position: absolute;
+    left: -24px;
+    bottom: 0;
+
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &[class ~="mercury"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-mercury);
+      }
+    }
+  }
+
+  &[class ~="venus"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-venus);
+      }
+    }
+  }
+
+  &[class ~="earth"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-earth);
+      }
+    }
+  }
+
+  &[class ~="mars"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-mars);
+      }
+    }
+  }
+
+  &[class ~="jupiter"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-jupiter);
+      }
+    }
+  }
+
+  &[class ~="saturn"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-saturn);
+      }
+    }
+  }
+
+  &[class ~="uranus"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-uranus);
+      }
+    }
+  }
+
+  &[class ~="neptune"] {
+    .tabMobile[class~="active"] {
+      &::before {
+        background-color: var(--clr-neptune);
+      }
+    }
+  }
+}
+
+.tabMobile {
+  position: relative;
+
+  padding-block: 20px;
+
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 10px;
+
+  text-align: center;
+  letter-spacing: 1.92857px;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+
+  &[class~="active"] {
+    color: var(--clr-white);
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transition: 0.2s ease-in;
+    // background-color: red;
+  }
 }
