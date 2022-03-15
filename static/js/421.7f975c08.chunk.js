@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[421],{421:function(a,e,s){a.exports=s.p+"static/media/icon-hamburger.05a40a49142005f6faf2.svg"}}]);
