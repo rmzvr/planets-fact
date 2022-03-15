@@ -1,0 +1,89 @@
+.hamburgerMenu {
+  display: none;
+
+  position: absolute;
+  top: 69px;
+  left: 0;
+  right: 0;
+  background-color: #070724;
+  padding: 24px;
+
+  transition: height 0.4s ease;
+  z-index: 10;
+
+  &[data-state="true"] {
+    display: block;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+
+  letter-spacing: 1.36364px;
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.link {
+  width: 100%;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  &[class~="mercury"] {
+    background-color: var(--clr-mercury);
+  }
+
+  &[class~="venus"] {
+    background-color: var(--clr-venus);
+  }
+
+  &[class~="earth"] {
+    background-color: var(--clr-earth);
+  }
+
+  &[class~="mars"] {
+    background-color: var(--clr-mars);
+  }
+
+  &[class~="jupiter"] {
+    background-color: var(--clr-jupiter);
+  }
+
+  &[class~="saturn"] {
+    background-color: var(--clr-saturn);
+  }
+
+  &[class~="uranus"] {
+    background-color: var(--clr-uranus);
+  }
+
+  &[class~="neptune"] {
+    background-color: var(--clr-neptune);
+  }
+}
+
+.arrow {
+  margin-left: auto;
+  margin-right: 8px;
+}
