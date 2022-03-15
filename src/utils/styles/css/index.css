@@ -437,7 +437,12 @@ a {
 }
 @media screen and (max-width: 740px) {
   .container {
-    width: min(100% - 3rem, 43rem);
+    width: min(100% - 2rem, 29rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: min(100% - 3rem, 29rem);
   }
 }
 
@@ -446,6 +451,7 @@ body {
   background-color: var(--clr-dark-blue);
   background-position: center;
   background-position-y: -134px;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */
