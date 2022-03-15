@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useState } from "react";
 import styles from "../components/App/App.module.scss";
 import planets from "../planets.json";
