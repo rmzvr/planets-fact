@@ -5,7 +5,7 @@ const useImage = (planet, activeTab) => {
   const [error, setError] = useState(null);
   const [image, setImage] = useState(null);
 
-  const imageName = planet.images[activeTab].match("(?<=s/).*");
+  const imageName = planet.images[activeTab].match("[^/]*$");
 
   useEffect(() => {
     const fetchImage = async () => {
