@@ -1,3 +1,16 @@
+@use "../../utils/styles/reset";
+@use "../../utils/styles/colors";
+@use "../../utils/styles/container";
+
+:root {
+  background-image: url(../../assets/background-stars.svg);
+  background-color: var(--clr-dark-blue);
+  background-position: center;
+  background-position-y: -134px;
+
+  overflow-x: hidden;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 350px;

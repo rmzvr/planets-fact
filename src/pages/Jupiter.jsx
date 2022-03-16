@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import styles from "../components/App/App.module.scss";
 import planets from "../planets.json";
 import useImage from "../utils/useImage";
@@ -9,11 +9,11 @@ import CardList from "../components/UI/Card/CardList";
 
 function Jupiter() {
   const [activeTab, setActiveTab] = useState("overview");
-  const planet = getPlanet(planets);
+  const planet = useMemo(() => getPlanet(planets), [planets]);
   const { image } = useImage(planet, activeTab);
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <main className={`${styles.main} ${planet.name.toLowerCase()}`}>
         <img className={styles.image} src={image} alt={planet.name} />
         <div className={styles.about}>
