@@ -11,6 +11,10 @@
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 350px;
