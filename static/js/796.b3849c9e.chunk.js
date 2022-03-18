@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[796],{796:function(e,s,t){e.exports=t.p+"static/media/solar-system-neptune.2d29b0bced017bbe231e.svg"}}]);

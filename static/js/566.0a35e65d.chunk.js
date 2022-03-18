@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[566],{124:function(s,e,t){s.exports=t.p+"static/media/solar-system-earth.6d735b9972c21f2ab87e.svg"}}]);

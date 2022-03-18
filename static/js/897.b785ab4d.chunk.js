@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[897],{897:function(s,e,t){s.exports=t.p+"static/media/solar-system-mercury.1b364d70f97dc0c29eb8.svg"}}]);

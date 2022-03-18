@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[411],{411:function(s,e,t){s.exports=t.p+"static/media/solar-system-uranus.ee91d2fd18c44c2fb7eb.svg"}}]);

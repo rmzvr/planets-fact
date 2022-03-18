@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[692],{692:function(s,t,c){s.exports=c.p+"static/media/solar-system-jupiter.c5bc297500d636cc78fb.svg"}}]);

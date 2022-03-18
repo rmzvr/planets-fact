@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[722],{722:function(s,t,e){s.exports=e.p+"static/media/solar-system-sun.d1366927d999409cf48c.svg"}}]);

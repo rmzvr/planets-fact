@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[789],{789:function(s,e,a){s.exports=a.p+"static/media/solar-system-venus.4cbaeafc18e818b4b619.svg"}}]);

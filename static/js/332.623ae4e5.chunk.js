@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplanets_fact=self.webpackChunkplanets_fact||[]).push([[332],{332:function(s,e,t){s.exports=t.p+"static/media/solar-system-saturn.fecd1ab97fcb4e32b2cc.svg"}}]);
