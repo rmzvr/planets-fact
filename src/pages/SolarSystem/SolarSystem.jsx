@@ -19,7 +19,10 @@ function SolarSystem() {
                   <Link
                     className={styles.planet}
                     to={`/${item.name.toLowerCase()}`}
-                  />
+                    aria-label={item.name}
+                  >
+                    {item.name}
+                  </Link>
                 </div>
               </div>
             ))}
