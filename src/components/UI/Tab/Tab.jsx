@@ -8,12 +8,12 @@ function Tab({ id, classes, children, handleClick }) {
       <MediaQuery minWidth={741}>
         <li className={`${styles.tabDesktop} ${classes}`} onClick={handleClick}>
           <span className={styles.tabID}>{id}</span>
-          <h3 className={styles.tabValue}>{children}</h3>
+          <h2 className={styles.tabValue}>{children}</h2>
         </li>
       </MediaQuery>
       <MediaQuery maxWidth={740}>
         <li className={`${styles.tabMobile} ${classes}`} onClick={handleClick}>
-          <h3 className={styles.tabValue}>{children}</h3>
+          <h2 className={styles.tabValue}>{children}</h2>
         </li>
       </MediaQuery>
     </>
