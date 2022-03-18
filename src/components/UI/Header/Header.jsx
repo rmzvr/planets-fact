@@ -10,9 +10,9 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.logo}>
-        The planets
-      </Link>
+      <h1 className={styles.logo}>
+        <Link to="/">The planets</Link>
+      </h1>
       <MediaQuery minWidth={741}>
         <nav>
           <ul className={styles.items}>
