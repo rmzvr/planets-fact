@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/planets-fact/static/css/main.722924d7.css",
-    "main.js": "/planets-fact/static/js/main.815d3142.js",
+    "main.js": "/planets-fact/static/js/main.6edade83.js",
     "static/js/267.3545ab27.chunk.js": "/planets-fact/static/js/267.3545ab27.chunk.js",
     "static/js/154.25685d68.chunk.js": "/planets-fact/static/js/154.25685d68.chunk.js",
     "static/js/855.80af80b6.chunk.js": "/planets-fact/static/js/855.80af80b6.chunk.js",
@@ -72,10 +72,10 @@
     "index.html": "/planets-fact/index.html",
     "static/media/solar-system-sun.svg": "/planets-fact/static/media/solar-system-sun.d1366927d999409cf48c.svg",
     "main.722924d7.css.map": "/planets-fact/static/css/main.722924d7.css.map",
-    "main.815d3142.js.map": "/planets-fact/static/js/main.815d3142.js.map"
+    "main.6edade83.js.map": "/planets-fact/static/js/main.6edade83.js.map"
   },
   "entrypoints": [
     "static/css/main.722924d7.css",
-    "static/js/main.815d3142.js"
+    "static/js/main.6edade83.js"
   ]
 }
