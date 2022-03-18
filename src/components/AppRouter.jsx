@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
+import SolarSystem from "../pages/SolarSystem/SolarSystem";
 import Mercury from "../pages/Mercury";
 import Venus from "../pages/Venus";
 import Earth from "../pages/Earth";
@@ -13,8 +14,8 @@ import Neptune from "../pages/Neptune";
 function AppRouter() {
   return (
     <Routes>
-      <Route path="*" element={<Navigate to="/mercury" />} />
-      <Route path="/" element={<Navigate to="/mercury" />} />
+      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/" element={<SolarSystem />} />
       <Route path="/mercury" element={<Mercury />} />
       <Route path="/venus" element={<Venus />} />
       <Route path="/earth" element={<Earth />} />
