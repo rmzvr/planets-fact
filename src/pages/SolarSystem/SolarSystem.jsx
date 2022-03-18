@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./SolarSystem.module.scss";
 import planets from "../../planets.json";
+import { Link } from "react-router-dom";
 
 function SolarSystem() {
   return (
@@ -15,7 +16,10 @@ function SolarSystem() {
                 key={item.name}
               >
                 <div className={styles.pos}>
-                  <div className={styles.planet}></div>
+                  <Link
+                    className={styles.planet}
+                    to={`/${item.name.toLowerCase()}`}
+                  />
                 </div>
               </div>
             ))}
