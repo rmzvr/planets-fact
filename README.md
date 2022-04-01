@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution]()
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/planets-fact-using-html-scss-modules-react-react-router-WEyuXR4LS)
 - Live Site URL: [Github Pages](https://rmzvr.github.io/planets-fact/)
 
 ## My process
