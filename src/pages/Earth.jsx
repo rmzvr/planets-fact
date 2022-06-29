@@ -17,7 +17,6 @@ function Earth() {
       <main className={`${styles.main} ${planet.name.toLowerCase()}`}>
         <img className={styles.image} src={image} alt={planet.name} />
         <div className={styles.about}>
-          <h1 className={styles.title}>{planet.name}</h1>
           <p className={styles.content}>{planet[activeTab].content}</p>
           <Source planet={planet} activeTab={activeTab} />
         </div>
