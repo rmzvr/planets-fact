@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./SolarSystem.module.scss";
-import planets from "../../planets.json";
-import { Link } from "react-router-dom";
+import React from 'react'
+import styles from './SolarSystem.module.scss'
+import planets from '../../planets.json'
+import { Link } from 'react-router-dom'
 
 function SolarSystem() {
   return (
@@ -20,9 +20,7 @@ function SolarSystem() {
                     className={styles.planet}
                     to={`/${item.name.toLowerCase()}`}
                     aria-label={item.name}
-                  >
-                    {item.name}
-                  </Link>
+                  ></Link>
                 </div>
               </div>
             ))}
@@ -30,7 +28,7 @@ function SolarSystem() {
         </div>
       </div>
     </main>
-  );
+  )
 }
 
-export default SolarSystem;
+export default SolarSystem
